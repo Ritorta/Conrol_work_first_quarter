@@ -59,16 +59,16 @@ int CheekArray(string[] array)
 return count;    
 }
 
-string[] CreateArray2(string[] array1, int count)
+string[] CreateArray2(string[] array, int size)
 {
-   string[] array2 = new string[count];
+   string[] array2 = new string[size];
 
-      for(int i = 0; i < array1.Length; i++)
+      for(int i = 0; i < array.Length; i++)
       {
-         if(array1[i].Length <= 3)
+         if(array[i].Length <= 3)
          {
-            array2[array2.Length - count] = array1[i];
-            count--;
+            array2[array2.Length - size] = array[i];
+            size--;
          }
       }
     
@@ -78,9 +78,16 @@ return array2;
 void ShowArrayText(string[] array)
 {
    Console.Write("[");
-   for (int i = 0; i < array.Length - 1; i++)
-   {  
-      Console.Write($"\"{array[i]}\", ");
-   }
-   Console.Write($"\"{array[array.Length - 1]}\"]");
+   for (int i = 0; i < array.Length; i++)
+      if(array[i] == "")
+      {
+         Console.Write("");
+      }
+      else
+      {
+         Console.Write($"\"{array[i]}\"");
+         Console.Write(", ");
+      }
+
+Console.Write($"]");
 }
