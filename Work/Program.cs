@@ -16,65 +16,71 @@
 // Решение:
 //
 
-    Console.Write("Enter the number of rows for array: ");
-    int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter the number of rows for array: ");
+int size = Convert.ToInt32(Console.ReadLine());
 
-    string[] strArray = CreateArray1();
-    int ThreeCharacters = CheekArray(strArray);
-    string[] newArray = CreateArray2(strArray, ThreeCharacters);
-    ShowArrayText(newArray);
+if(size == 0)
+{
+   Console.WriteLine("Error!");
+   Console.WriteLine("You need enter number rows dont null.");
+}
+else
+{
+   string[] strArray = CreateArray1();
+   int ThreeCharacters = CheekArray(strArray);
+   string[] newArray = CreateArray2(strArray, ThreeCharacters);
+   ShowArrayText(newArray);
+}
 
 string[] CreateArray1()
 {
-    string[] array1 = new string[size];
+   string[] array1 = new string[size];
         
-        for(int i = 0; i < array1.Length; i++)
-        {
-            Console.Write($"Enter text the rows {i + 1}: ");
-            array1[i] = Console.ReadLine();
-        }
+      for(int i = 0; i < array1.Length; i++)
+      {
+         Console.Write($"Enter text the rows {i + 1}: ");
+         array1[i] = Console.ReadLine();     
+      }
     
 return array1; 
 }
 
 int CheekArray(string[] array)
 {
-    int count = 0;
-    for(int i = 0; i < array.Length; i++)
-        {
-        if(array[i].Length <= 3)
-            {
-                count++; 
-            }
-        }
+   int count = 0;
+   for(int i = 0; i < array.Length; i++)
+      {
+      if(array[i].Length <= 3)
+         {
+            count++; 
+         }
+      }
 
 return count;    
 }
 
 string[] CreateArray2(string[] array1, int count)
 {
-    string[] array2 = new string[count];
+   string[] array2 = new string[count];
 
-        for(int i = 0; i < array1.Length; i++)
-        {
-            if(array1[i].Length <= 3)
-            {
+      for(int i = 0; i < array1.Length; i++)
+      {
+         if(array1[i].Length <= 3)
+         {
             array2[array2.Length - count] = array1[i];
             count--;
-            }
-        }
+         }
+      }
     
 return array2; 
 }
 
 void ShowArrayText(string[] array)
 {
-    Console.Write("[");
-    for (int i = 0; i < array.Length - 1; i++)
-    {
-        
-        Console.Write($"\"{array[i]}\", ");
-    }
-    Console.Write($"\"{array[array.Length - 1]}\"]");
-
+   Console.Write("[");
+   for (int i = 0; i < array.Length - 1; i++)
+   {  
+      Console.Write($"\"{array[i]}\", ");
+   }
+   Console.Write($"\"{array[array.Length - 1]}\"]");
 }
