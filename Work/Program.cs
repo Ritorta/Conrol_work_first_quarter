@@ -27,7 +27,6 @@
 string[] CreateArray1()
 {
     string[] array1 = new string[size];
-
         
         for(int i = 0; i < array1.Length; i++)
         {
@@ -35,7 +34,6 @@ string[] CreateArray1()
             array1[i] = Console.ReadLine();
         }
     
-
 return array1; 
 }
 
@@ -66,18 +64,17 @@ string[] CreateArray2(string[] array1, int count)
             }
         }
     
-
 return array2; 
 }
 
 void ShowArrayText(string[] array)
 {
-
-    Console.Write("[ ");
-    for (int i = 0; i < array.Length; i++)
+    Console.Write("[");
+    for (int i = 0; i < array.Length - 1; i++)
     {
-        Console.Write($" {array[i]}, ");
+        
+        Console.Write($"\"{array[i]}\", ");
     }
-    Console.Write("] ");
+    Console.Write($"\"{array[array.Length - 1]}\"]");
 
 }
