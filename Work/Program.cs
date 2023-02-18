@@ -77,16 +77,15 @@ return array2;
 
 void ShowArrayText(string[] array)
 {
-   Console.Write("[");
+   Console.Write("[ ");
    for (int i = 0; i < array.Length; i++)
       if(array[i] == "")
       {
          Console.Write("");
       }
       else
-      {
-         Console.Write($"\"{array[i]}\"");
-         Console.Write(", ");
+      {  
+         Console.Write($"\"{array[i]}\" ");
       }
 
 Console.Write($"]");
