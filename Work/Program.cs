@@ -18,11 +18,11 @@
 
     Console.Write("Enter the number of rows for array: ");
     int size = Convert.ToInt32(Console.ReadLine());
-    
+
     string[] strArray = CreateArray1();
-    string[] ThreeCharacters = CheekArray(strArray);
-    
-   
+    int ThreeCharacters = CheekArray(strArray);
+    string[] newArray = CreateArray2(strArray, ThreeCharacters);
+    ShowArrayText(newArray);
 
 string[] CreateArray1()
 {
@@ -39,6 +39,37 @@ string[] CreateArray1()
 return array1; 
 }
 
+int CheekArray(string[] array)
+{
+    int count = 0;
+    for(int i = 0; i < array.Length; i++)
+        {
+        if(array[i].Length <= 3)
+            {
+                count++; 
+            }
+        }
+
+return count;    
+}
+
+string[] CreateArray2(string[] array1, int count)
+{
+    string[] array2 = new string[count];
+
+        for(int i = 0; i < array1.Length; i++)
+        {
+            if(array1[i].Length <= 3)
+            {
+            array2[array2.Length - count] = array1[i];
+            count--;
+            }
+        }
+    
+
+return array2; 
+}
+
 void ShowArrayText(string[] array)
 {
 
@@ -50,18 +81,3 @@ void ShowArrayText(string[] array)
     Console.Write("] ");
 
 }
-
-string[] CheekArray(string[] array)
-{
-    
-    for(int i = 0; i < array.Length; i++)
-        {
-        if(array[i].Length <= 3)
-            {
-                Console.Write($" {array[i]}, ");   
-            }
-        }
-
-return array;    
-}
-
