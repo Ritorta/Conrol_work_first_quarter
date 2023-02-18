@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Esdesu\\.nuget\\packages\\": {}
+    "C:\\Users\\SlyFox\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Esdesu\\Documents\\Материалы по обучению\\Обучение Ai\\C#\\HomeWork\\Control Work\\Work\\Work.csproj",
+      "projectUniqueName": "F:\\SlyFox\\Downloads\\Материалы по обучению\\Обучение Ai\\Home Work\\3. Знакомство с языками программирования\\C# Base\\Home Work\\Conrol_work_first_quarter\\Work\\Work.csproj",
       "projectName": "Work",
-      "projectPath": "C:\\Users\\Esdesu\\Documents\\Материалы по обучению\\Обучение Ai\\C#\\HomeWork\\Control Work\\Work\\Work.csproj",
-      "packagesPath": "C:\\Users\\Esdesu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Esdesu\\Documents\\Материалы по обучению\\Обучение Ai\\C#\\HomeWork\\Control Work\\Work\\obj\\",
+      "projectPath": "F:\\SlyFox\\Downloads\\Материалы по обучению\\Обучение Ai\\Home Work\\3. Знакомство с языками программирования\\C# Base\\Home Work\\Conrol_work_first_quarter\\Work\\Work.csproj",
+      "packagesPath": "C:\\Users\\SlyFox\\.nuget\\packages\\",
+      "outputPath": "F:\\SlyFox\\Downloads\\Материалы по обучению\\Обучение Ai\\Home Work\\3. Знакомство с языками программирования\\C# Base\\Home Work\\Conrol_work_first_quarter\\Work\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Esdesu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SlyFox\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
